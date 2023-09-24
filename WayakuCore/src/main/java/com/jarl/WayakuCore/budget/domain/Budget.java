@@ -1,9 +1,11 @@
 package com.jarl.WayakuCore.budget.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.Accessors;
+import org.hibernate.loader.ast.internal.CacheEntityLoaderHelper;
 
 import java.math.BigDecimal;
 import java.util.UUID;
