@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @MappedSuperclass
@@ -23,4 +24,7 @@ public class Transaction {
     @JsonProperty
     @Column(name = "amount")
     private BigDecimal amount;
+
+    @Column(name = "transaction_date")
+    private LocalDateTime transactionDate;
 }
