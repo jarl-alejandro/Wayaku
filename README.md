@@ -1,10 +1,13 @@
+http://localhost:9090/realms/wayaku/.well-known/openid-configuration
+docker run -p 9090:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev
+
 # Aplicación wayaku "Tu asistente financiero”
 
 ## Diseño de sistema
 
 ### Visión general del sistema
 > Propósito: La aplicación tiene como objetivo permitir a los usuarios registrar y hacer un seguimiento de sus gastos personales para tener un mejor control de sus finanzas.
->
+
 ### Características principales:
 > **Crear presupuesto**:
 > El usuario podra crear un presupuesto o multiples presupuesto, editar y eliminar presupuestos
