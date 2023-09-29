@@ -44,7 +44,7 @@ export default function Header() {
                                       clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <a href="https://demo.themesberg.com/windster/pricing/"
+                        <a href="#"
                            className="hidden sm:inline-flex ml-5 text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center mr-3">
                             Cerrar sesión
                         </a>
