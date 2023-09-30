@@ -59,7 +59,7 @@ export default function Form() {
                     <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">Iniciar sesión</h2>
                     <form className="mt-8 space-y-6" onSubmit={handleLogin}>
                         <div>
-                            <label htmlFor="username" className="text-sm font-medium text-gray-900 block mb-2">Email</label>
+                            <label htmlFor="username" className="text-sm font-medium text-gray-900 block mb-2">Username</label>
                             <input type="username" name="username" id="username"
                                    onChange={handleChangeForm}
                                    value={loginForm.username}
@@ -75,6 +75,7 @@ export default function Form() {
                                    required="" />
                         </div>
                         <button type="submit"
+                                id="entryWayaku"
                                 className="text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-base px-5 py-3 w-full sm:w-auto text-center">
                             Entrar a Wayaku
                         </button>
