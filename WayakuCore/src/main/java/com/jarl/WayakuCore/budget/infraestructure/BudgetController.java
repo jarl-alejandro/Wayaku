@@ -11,6 +11,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/budgets")
+@CrossOrigin(origins = "*")
 public class BudgetController {
 
     final private BudgetService budgetService;
@@ -37,6 +38,12 @@ public class BudgetController {
 
         budgetService.store(budget);
 
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable("id") String id) {
+        budgetService.delete(UUID.fromString(id));
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 }

@@ -5,6 +5,7 @@ import com.jarl.WayakuCore.budget.domain.BudgetRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class BudgetService {
@@ -21,6 +22,10 @@ public class BudgetService {
 
     public List<Budget> list(){
         return budgetRepository.findAll();
+    }
+
+    public void delete(UUID id) {
+        budgetRepository.deleteById(id);
     }
 
 }

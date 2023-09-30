@@ -11,3 +11,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
+*, :after, :before {
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(63,131,248,.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+}
